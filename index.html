@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS.collection</title>
+    <link rel="stylesheet" href="web.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ❌ height remove */
+        div {
+            background-color: azure;
+        }
+
+        input {
+            height: 52px;
+            width: 100%;
+            font-size: medium;
+        }
+
+        nav {
+            background-color: black;
+            text-align: center;
+            color: aliceblue;
+            height: 28px;
+            font-size: large;
+        }
+
+        .img {
+            background-color: white;
+            height: 60vh;
+            width: 100%;
+        }
+
+        /* button{
+            height:35px;
+            width:52px;
+            background-color:red;
+        } */
+
+        .top-bar {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            height: 30px;
+        }
+
+        /* boxes ka layout */
+        h2 {
+            margin: 20px 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            opacity: 0.9;
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+
+        <div class="top-bar">
+            <p id="changingText">🌟Free Delivery All Over Pakistan🌟</p>
+        </div>
+
+        <div class="container">
+
+            <!-- Logo  -->
+            <div class="logo">
+                A.S Collection
+            </div>
+
+
+            <!-- Navigation Menu -->
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" id="homeBtn">Home</a></li>
+                    <!-- <li><a href="#" id="shopBtn">Shop</a></li> -->
+                    <li><a href="#" id="categoriesBtn">Categories</a></li>
+                    <li><a href="#" id="contactBtn">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <!-- Search & Cart -->
+            <div class="header-right">
+
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Search products...">
+                    <button id="search-btn">&#128269;</button>
+                </div>
+
+
+
+
+                <!-- <div class="search-box">
+                <input type="text" id="search" placeholder="Search products...">
+                <button id="search-btn">&#128269;</button>
+            </div> -->
+
+                <div class="cart-icon" id="cart">
+                    &#128722;<span class="cart-count" id="cart-count">0</span>
+                </div>
+
+                <div id="cart-dropdown" class="cart-dropdown">
+                    <!-- Items dynamically add honge -->
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="img">
+            <img id="changingImage" src="images/pic1.png" height="420px" width="100%">
+        </div>
+
+        <div class="cbox">
+
+            <!-- PEHLA DABA -->
+            <h2>New Arrivals</h2>
+            <div class="boxes">
+                
+                  <div class="box1">
+                    <img src="images/pic.png" loading="lazy" height="344" width="264">
+                    <figcaption>New arrival fresh piece<p>Soft and smooth</p></figcaption>
+                </div>
+                <div class="box2"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box3"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box4"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box5"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box6"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box7"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box8"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+                <div class="box9"><img src="images/pic.png
+" loading="lazy" height="344" width="264"><figcaption>About image</figcaption></div>
+
+            </div>
+
+            <!-- DOSRA DABA -->
+            <h2>Top Sellings</h2>
+            <div class="boxes2">
+                
+                <div class="box1">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+
+                </div>
+                <div class="box2">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box3">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box4">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5">
+                    <img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+            </div>
+
+            <!-- TERSRA DABBA -->
+            <h2>Lawn Dress</h2>
+            <div class="boxes3">
+                
+                <div class="box1"><img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>Lawn dress green</figcaption>
+                </div>
+                <div class="box2"><img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>Lawn dress black</figcaption>
+                </div>
+                <div class="box3"><img src="images/pic.png
+" loading="lazy"height="344" width="264">
+                    <figcaption>Lawn dress gry</figcaption>
+                </div>
+                <div class="box4"><img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+" loading="lazy"height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+" loading="lazy"height="344" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+            </div>
+
+
+            <!-- 4 DABA -->
+            <h2>Winter collection</h2>
+            <div class="boxes4">
+                
+                <div class="box1"><img src="images/pic.png
+" loading="lazy"height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box2"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box3"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>Boskhi</figcaption>
+                </div>
+                <div class="box4"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+            </div>
+
+
+            <!-- 5 DABA -->
+            <h2>Summer collection</h2>
+            <div class="boxes5">
+             
+
+                <div class="box1"><img src="images/pic.png"
+loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box2"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box3"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box4"><img src="images/pic.png
+" loading="lazy"height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+                <div class="box5"><img src="images/pic.png
+"loading="lazy" height="374" width="264">
+                    <figcaption>About image</figcaption>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- <div id="order-form-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+    background: rgba(0,0,0,0.5); justify-content:center; align-items:center; z-index:1000;">
+    <div style="background:white; padding:20px; width:300px; border-radius:8px; position:relative;">
+        <span onclick="closeOrderForm()" style="position:absolute; top:5px; right:10px; cursor:pointer;">&times;</span>
+        <h2>Order Details</h2>
+        <input type="text" id="order-first" placeholder="First Name" required><br><br>
+        <input type="text" id="order-last" placeholder="Last Name" required><br><br>
+        <input type="text" id="order-address" placeholder="Address" required><br><br>
+        <input type="text" id="order-phone" placeholder="Phone" required><br><br>
+        <button onclick="submitOrder()">Confirm Order</button>
+    </div>
+</div> -->
+
+
+    <footer>
+        <div class="btn">
+            <button id="btn"><b>Rate us:</b></button>
+            <span id="msg" style="display:none; margin-left:10px;"></span>
+
+        </div>
+
+        <script>
+            let button = document.getElementById("btn");
+            let message = document.getElementById("msg");
+
+            button.addEventListener("click", () => {
+                if (message.style.display === "none") {
+                    message.style.display = "inline";
+                } else {
+                    message.style.display = "none";
+                }
+            });</script>
+        <div class="logos">
+            <img src="images/picO.png" height="40px" width='40px'>
+        </div>
+        <!-- review -->
+        <!-- <h3>Give Your Review</h3>
+<form id="reviewForm">
+  <input type="text" id="name" placeholder="Your Name" required><br>
+  <textarea id="review" placeholder="Write your review" required></textarea><br>
+  <label>Rating:</label>
+  <select id="stars">
+    <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+    <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+    <option value="⭐⭐⭐">⭐⭐⭐</option>
+    <option value="⭐⭐">⭐⭐</option>
+    <option value="⭐">⭐</option>
+    
+    
+  </select><br>
+  <button type="submit">Submit</button>
+</form>
+
+<div id="reviews"></div> -->
+
+        <!-- 
+<script>
+document.getElementById('reviewForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  let name = document.getElementById('name').value;
+  let review = document.getElementById('review').value;
+  let stars = document.getElementById('stars').value;
+
+  let reviewsDiv = document.getElementById('reviews');
+  reviewsDiv.innerHTML += `<p>${stars} <strong>${name}</strong>: ${review}</p>`;
+
+  // Form reset
+  document.getElementById('reviewForm').reset();
+});
+</script> -->
+
+        <h3>Give Your Review</h3>
+        <form id="reviewForm">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <textarea id="review" placeholder="Write your review" required></textarea><br>
+            <label>Rating:</label>
+            <select id="stars">
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐">⭐</option>
+            </select><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="reviews"></div>
+
+        <!-- 1️⃣ Firebase SDK scripts -->
+        <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+        <!-- 2️⃣ Your JS script -->
+        <script>
+            // 2a. Firebase config
+            const firebaseConfig = {
+                apiKey: "YOUR_API_KEY",
+                authDomain: "YOUR_PROJECT.firebaseapp.com",
+                projectId: "YOUR_PROJECT",
+                storageBucket: "YOUR_PROJECT.appspot.com",
+                messagingSenderId: "XXX",
+                appId: "XXX"
+            };
+            firebase.initializeApp(firebaseConfig);
+            const db = firebase.firestore();
+
+            // 2b. References
+            const reviewForm = document.getElementById('reviewForm');
+            const reviewsDiv = document.getElementById('reviews');
+
+            // 2c. Load reviews
+            function loadReviews() {
+                db.collection("reviews").orderBy("timestamp", "desc").onSnapshot(snapshot => {
+                    reviewsDiv.innerHTML = "";
+                    snapshot.forEach(doc => {
+                        const r = doc.data();
+                        reviewsDiv.innerHTML += `<p>${r.stars} <strong>${r.name}</strong>: ${r.review}</p>`;
+                    });
+                });
+            }
+
+            // 2d. Submit review
+            reviewForm.addEventListener('submit', e => {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const review = document.getElementById('review').value;
+                const stars = document.getElementById('stars').value;
+
+                db.collection("reviews").add({
+                    name,
+                    review,
+                    stars,
+                    timestamp: firebase.firestore.FieldValue.serverTimestamp()
+                });
+
+                reviewForm.reset();
+            });
+
+            // 2e. Initial load
+            loadReviews();
+        </script>
+
+</body>
+
+</html>
+
+
+</footer>
+
+<script src="web.js"></script>
+<script src="price.js"></script>
+</body>
+
+</html>
